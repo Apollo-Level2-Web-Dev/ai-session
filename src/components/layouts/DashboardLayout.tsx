@@ -12,7 +12,7 @@ export default function DashboardLayout() {
   }
 
   // Fetch user role from Clerk metadata (static role for now)
-  const userRole = "user"; // "user" or "admin"
+  const userRole = "admin"; // "user" or "admin"
 
   return (
     <div className="flex h-screen">

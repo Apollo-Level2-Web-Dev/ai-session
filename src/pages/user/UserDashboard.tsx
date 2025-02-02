@@ -5,7 +5,7 @@ export default function UserDashboard() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <Card>
         <CardHeader>
-          <CardTitle>My Orders</CardTitle>
+          <CardTitle>Api Limit </CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-2xl font-bold">5</p>
@@ -14,7 +14,7 @@ export default function UserDashboard() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Pending Deliveries</CardTitle>
+          <CardTitle>Subscription</CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-2xl font-bold">2</p>
