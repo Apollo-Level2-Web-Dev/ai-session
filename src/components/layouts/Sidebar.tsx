@@ -1,7 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ChevronDown, Home, List, Settings, User, Users } from "lucide-react"; // Import ChevronDown for the arrow
+import {
+  Bot,
+  BrainCircuit,
+  ChevronDown,
+  Home,
+  ImagePlus,
+  List,
+  Settings,
+  User,
+  Users,
+} from "lucide-react"; // Import ChevronDown for the arrow
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -54,6 +64,28 @@ const userRoutes: Route[] = [
     icon: <User className="w-5 h-5" />,
   },
   {
+    path: "/dashboard/user/ai/gpt",
+    label: "AI",
+    icon: <Users className="w-5 h-5" />,
+    children: [
+      {
+        path: "/dashboard/user/ai/gpt",
+        label: "Chat GPT",
+        icon: <Bot className="w-5 h-5" />,
+      },
+      {
+        path: "/dashboard/user/ai/deepseek",
+        label: "deepseek",
+        icon: <BrainCircuit className="w-5 h-5" />,
+      },
+      {
+        path: "/dashboard/user/ai/midjourney",
+        label: "midjourney",
+        icon: <ImagePlus className="w-5 h-5" />,
+      },
+    ],
+  },
+  {
     path: "/dashboard/user/orders",
     label: "Orders",
     icon: <List className="w-5 h-5" />,
@@ -69,7 +101,7 @@ export function Sidebar({
   setIsOpen: (open: boolean) => void;
   role: string;
 }) {
-  const routes = role === "user" ? adminRoutes : userRoutes;
+  const routes = role === "user" ?  userRoutes : adminRoutes;
 
   // State to track which parent route is expanded
   const [expandedRoute, setExpandedRoute] = useState<string | null>(null);
@@ -85,7 +117,7 @@ export function Sidebar({
           <Link
             key={child.path}
             to={child.path}
-            className="flex items-center gap-2 p-2 rounded hover:bg-gray-700"
+            className="flex items-center gap-2 p-2 rounded hover:bg-gray-200"
           >
             {child.icon}
             {child.label}

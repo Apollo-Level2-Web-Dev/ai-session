@@ -1,5 +1,8 @@
 import DashboardLayout from "@/components/layouts/DashboardLayout";
 import AdminDashboard from "@/pages/admin/AdminDashboard";
+import ChatGpt from "@/pages/user/ChatGpt";
+import Deepseek from "@/pages/user/Deepseek";
+import Midjourney from "@/pages/user/Midjourney";
 import UserDashboard from "@/pages/user/UserDashboard";
 import { routeGenerator } from "@/utils/routeGenerator";
 import { createBrowserRouter } from "react-router-dom";
@@ -13,6 +16,9 @@ const adminPaths = [
 const userPaths = [
   { path: "", element: <UserDashboard /> },
   { path: "profile", element: "<Profile /> " },
+  { path: "ai/gpt", element: <ChatGpt /> },
+  { path: "ai/deepseek", element: <Deepseek /> },
+  { path: "ai/midjourney", element: <Midjourney /> },
   { path: "orders", element: "<Orders />" },
 ];
 const router = createBrowserRouter([
