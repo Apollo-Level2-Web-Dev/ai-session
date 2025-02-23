@@ -1,0 +1,279 @@
+{
+  "Car-Management-System": {
+    "Main-Functionalities": {
+      "User-Registration-Authentication": {
+        "Secure-Registration-and-Login": {
+          "description": "Handles user registration and login securely with password hashing and email verification.",
+          "correct": false,
+          "number": 10,
+          "message": "Good work! ✅ Registration and login implemented securely.",
+          "error": "Registration and login are not secure. ❌ Ensure password hashing and correct authentication.",
+          "sub_req_1": {
+            "description": "Users can register with name, email, and password.",
+            "correct": false,
+            "number": 3,
+            "message": "Good work! ✅ Registration functionality is implemented.",
+            "error": "Registration fields missing or incorrect. ❌ Ensure all required fields are validated."
+          },
+          "sub_req_2": {
+            "description": "Passwords are securely hashed before storing in the database.",
+            "correct": false,
+            "number": 3,
+            "message": "Good work! ✅ Passwords are hashed correctly.",
+            "error": "Password hashing is missing or incorrect. ❌ Ensure proper hashing before storage."
+          },
+          "sub_req_3": {
+            "description": "Users can log in using email and password.",
+            "correct": false,
+            "number": 2,
+            "message": "Good work! ✅ Login functionality is implemented.",
+            "error": "Login functionality is missing or incorrect. ❌ Ensure proper login validation."
+          }
+        },
+        "JWT-Authentication": {
+          "description": "Generates a JWT token upon login for secure user authentication.",
+          "correct": false,
+          "number": 4,
+          "message": "Good work! ✅ JWT authentication is working correctly.",
+          "error": "JWT implementation is incorrect. ❌ Ensure proper token generation and storage.",
+          "sub_req_1": {
+            "description": "Generate JWT token upon login.",
+            "correct": false,
+            "number": 2,
+            "message": "Good work! ✅ JWT token generation is implemented.",
+            "error": "JWT token generation is missing or incorrect. ❌ Ensure the correct token is generated."
+          },
+          "sub_req_2": {
+            "description": "Store the token in local storage for maintaining user sessions.",
+            "correct": false,
+            "number": 2,
+            "message": "Good work! ✅ Token storage is implemented correctly.",
+            "error": "Token storage is missing or incorrect. ❌ Ensure the token is saved in local storage."
+          }
+        },
+        "Logout-Functionality": {
+          "description": "Clears the token and redirects to the login page on logout.",
+          "correct": false,
+          "number": 2,
+          "message": "Good work! ✅ Logout functionality is implemented correctly.",
+          "error": "Logout functionality is missing or incorrect. ❌ Ensure token clearance and redirection."
+        }
+      },
+      "Public-Routes": {
+        "Home-Page": {
+          "description": "Displays the home page with navigation, promotional content, and featured cars.",
+          "correct": false,
+          "number": 5,
+          "message": "Good work! ✅ Home page is implemented correctly.",
+          "error": "Home page is incomplete or incorrect. ❌ Ensure all components are added.",
+          "sub_req_1": {
+            "description": "Navbar with logo, favicon, navigation items, and login/signup buttons.",
+            "correct": false,
+            "number": 1,
+            "message": "Good work! ✅ Navbar is functional and complete.",
+            "error": "Navbar is incomplete or incorrect. ❌ Ensure all elements are present."
+          },
+          "sub_req_2": {
+            "description": "Banner with promotional content.",
+            "correct": false,
+            "number": 1,
+            "message": "Good work! ✅ Banner is added correctly.",
+            "error": "Banner is missing or incorrect. ❌ Ensure banner content is implemented."
+          },
+          "sub_req_3": {
+            "description": "Featured Cars section displaying up to 6 cars with a 'View All' button.",
+            "correct": false,
+            "number": 2,
+            "message": "Good work! ✅ Featured cars section is functional.",
+            "error": "Featured cars section is missing or incomplete. ❌ Ensure cars are displayed."
+          },
+          "sub_req_4": {
+            "description": "Extra section like testimonials or blogs.",
+            "correct": false,
+            "number": 0.5,
+            "message": "Good work! ✅ Extra section is implemented.",
+            "error": "Extra section is missing. ❌ Add additional content like testimonials."
+          },
+          "sub_req_5": {
+            "description": "Footer with links, social media, and contact details.",
+            "correct": false,
+            "number": 0.5,
+            "message": "Good work! ✅ Footer is implemented.",
+            "error": "Footer is missing or incorrect. ❌ Ensure footer has the necessary elements."
+          }
+        },
+        "All-Cars-Page": {
+          "description": "Displays all cars with search and filter functionalities.",
+          "correct": false,
+          "number": 5,
+          "message": "Good work! ✅ All Cars page is implemented.",
+          "error": "All Cars page is incomplete or incorrect. ❌ Ensure all functionalities are working.",
+          "sub_req_1": {
+            "description": "Search functionality by brand, car name, or category.",
+            "correct": false,
+            "number": 2,
+            "message": "Good work! ✅ Search functionality works as expected.",
+            "error": "Search functionality is missing or incorrect. ❌ Ensure it filters cars properly."
+          },
+          "sub_req_2": {
+            "description": "Filters for price range, model, brand, category, and availability.",
+            "correct": false,
+            "number": 1.5,
+            "message": "Good work! ✅ Filters are implemented correctly.",
+            "error": "Filters are missing or incorrect. ❌ Ensure filters work as specified."
+          },
+          "sub_req_3": {
+            "description": "Car cards displaying name, brand, model, price, and category with a 'View Details' button.",
+            "correct": false,
+            "number": 1.5,
+            "message": "Good work! ✅ Car cards are displayed properly.",
+            "error": "Car cards are incomplete or incorrect. ❌ Ensure they show required information."
+          }
+        },
+        "Car-Details-Page": {
+          "description": "Displays detailed information about the selected car.",
+          "correct": false,
+          "number": 3,
+          "message": "Good work! ✅ Car details page is implemented correctly.",
+          "error": "Car details page is missing or incorrect. ❌ Ensure all information is displayed.",
+          "sub_req_1": {
+            "description": "Display car image and details.",
+            "correct": false,
+            "number": 1.5,
+            "message": "Good work! ✅ Car image and details are displayed.",
+            "error": "Car image or details are missing. ❌ Ensure all car details are shown."
+          },
+          "sub_req_2": {
+            "description": "'Buy Now' button redirecting to checkout.",
+            "correct": false,
+            "number": 1.5,
+            "message": "Good work! ✅ 'Buy Now' button redirects correctly.",
+            "error": "'Buy Now' button is not working. ❌ Ensure it redirects to checkout."
+          }
+        },
+        "About-Page": {
+          "description": "Displays informative content about the shop and its mission.",
+          "correct": false,
+          "number": 2,
+          "message": "Good work! ✅ About page is implemented.",
+          "error": "About page is missing or incomplete. ❌ Ensure it includes relevant information.",
+          "sub_req_1": {
+            "description": "Informative content about the shop and its mission.",
+            "correct": false,
+            "number": 1,
+            "message": "Good work! ✅ Content is relevant and informative.",
+            "error": "Content is missing or irrelevant. ❌ Ensure the mission is clearly stated."
+          },
+          "sub_req_2": {
+            "description": "Additional relevant details.",
+            "correct": false,
+            "number": 1,
+            "message": "Good work! ✅ Relevant details are added.",
+            "error": "Details are missing. ❌ Add more relevant information about the shop."
+          }
+        }
+      },
+      "Private-Routes": {
+        "Checkout-Page": {
+          "description": "Handles user checkout process ensuring stock availability and order details.",
+          "correct": false,
+          "number": 4,
+          "message": "Good work! ✅ Checkout page is implemented correctly.",
+          "error": "Checkout page is missing or incorrect. ❌ Ensure stock and order details are correctly handled.",
+          "sub_req_1": {
+            "description": "Users can place orders while ensuring stock availability.",
+            "correct": false,
+            "number": 1.5,
+            "message": "Good work! ✅ Stock availability check is functioning.",
+            "error": "Stock check is missing or incorrect. ❌ Ensure stock availability is verified."
+          },
+          "sub_req_2": {
+            "description": "Order form with product details, user info, total price, and payment method.",
+            "correct": false,
+            "number": 1.5,
+            "message": "Good work! ✅ Order form is complete and accurate.",
+            "error": "Order form is missing or incorrect. ❌ Ensure it includes all necessary details."
+          },
+          "sub_req_3": {
+            "description": "'Order Now' button for confirmation.",
+            "correct": false,
+            "number": 1,
+            "message": "Good work! ✅ Order confirmation button works.",
+            "error": "'Order Now' button is missing or not functional. ❌ Ensure it confirms the order."
+          }
+        },
+        "Payment-Integration": {
+          "description": "Integrates SurjoPay payment gateway for seamless transactions.",
+          "correct": false,
+          "number": 5,
+          "message": "Good work! ✅ Payment integration is successful.",
+          "error": "Payment integration is missing or incorrect. ❌ Ensure SurjoPay gateway is integrated properly."
+        },
+        "Admin-Dashboard": {
+          "description": "Allows admins to manage users, products, and orders.",
+          "correct": false,
+          "number": 5,
+          "message": "Good work! ✅ Admin dashboard is functional.",
+          "error": "Admin dashboard is missing or incorrect. ❌ Ensure admin features are working."
+        },
+        "User-Dashboard": {
+          "description": "Allows users to manage orders and profiles.",
+          "correct": false,
+          "number": 5,
+          "message": "Good work! ✅ User dashboard is functional.",
+          "error": "User dashboard is missing or incorrect. ❌ Ensure users can manage orders and profiles."
+        }
+      }
+    },
+    "UI-UX-Design": {
+      "Responsive-Design": {
+        "description": "Ensures the platform works seamlessly across all screen sizes and devices.",
+        "correct": false,
+        "number": 7,
+        "message": "Good work! ✅ Responsive design is implemented.",
+        "error": "Responsive design is missing or incorrect. ❌ Ensure proper layout adjustments for various screen sizes."
+      },
+      "Error-Handling": {
+        "description": "Displays user-friendly error messages for various issues.",
+        "correct": false,
+        "number": 3,
+        "message": "Good work! ✅ Error handling is in place.",
+        "error": "Error handling is missing or incorrect. ❌ Ensure all errors are caught and displayed properly.",
+        "sub_req_1": {
+          "description": "Invalid login credentials error.",
+          "correct": false,
+          "number": 1,
+          "message": "Good work! ✅ Error for invalid login credentials is shown.",
+          "error": "Invalid login credentials error is missing or incorrect. ❌ Ensure a proper error message is displayed."
+        },
+        "sub_req_2": {
+          "description": "Registration errors (e.g., duplicate email).",
+          "correct": false,
+          "number": 1,
+          "message": "Good work! ✅ Registration error messages are shown.",
+          "error": "Registration errors are missing or incorrect. ❌ Ensure duplicate email is caught and shown."
+        },
+        "sub_req_3": {
+          "description": "Error for failed operations (e.g., out-of-stock products).",
+          "correct": false,
+          "number": 1,
+          "message": "Good work! ✅ Error for failed operations is displayed.",
+          "error": "Error for failed operations is missing or incorrect. ❌ Ensure all failures are caught and communicated."
+        }
+      },
+      "Loading-States": {
+        "description": "Displays spinners or loaders during API calls and data fetch operations.",
+        "correct": false,
+        "number": 2,
+        "message": "Good work! ✅ Loading states are handled.",
+        "error": "Loading states are missing. ❌ Ensure that spinners are shown during data fetching operations."
+      },
+      "Toasts": {
+        "description": "Displays toast notifications for important actions and events.",
+        "correct": false,
+        "number": 3,
+        "message": "Good work! ✅ Toast notifications are shown.",
+        "error": "Toast notifications are missing. ❌ Ensure that success and error toasts appear after relevant actions."
+      }
+    }
+  }

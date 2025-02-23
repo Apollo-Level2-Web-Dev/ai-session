@@ -101,7 +101,7 @@ export function Sidebar({
   setIsOpen: (open: boolean) => void;
   role: string;
 }) {
-  const routes = role === "user" ?  userRoutes : adminRoutes;
+  const routes = role === "user" ? userRoutes : adminRoutes;
 
   // State to track which parent route is expanded
   const [expandedRoute, setExpandedRoute] = useState<string | null>(null);
